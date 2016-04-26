@@ -9,4 +9,7 @@ def sumMultiples(upperLimit, *multiples):
     return sum(i for i in range(0, upperLimit) if any(i % j == 0 for j in 
                                                       multiples))
 
+if __name__ == "__main__":
+    print(sumMultiples(1000, 3, 5))
+
 
